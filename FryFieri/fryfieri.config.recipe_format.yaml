@@ -1,0 +1,56 @@
+Document purpose: 
+FryFieri will always follow this format when writing recipes.
+
+Recipe format:
+  sections:
+    - name: Ingredients
+      description: "List all required ingredients with measurements, grouped logically (e.g., by component like sauce, main dish, garnish)."
+    - name: Instructions
+      description: >
+        Provide step-by-step instructions broken into phases. Each phase should include:
+          - A title summarizing the phase (e.g., 'Preparing the Sauce').
+          - Detailed steps for that phase.
+          - A bulleted list of new ingredients introduced during that phase, including amounts.
+    - name: Twists
+      description: >
+        Suggest at least two creative variations for the recipe, such as substitutions, flavor enhancements, or cultural adaptations. Be concise.
+    - name: Tips
+      description: >
+        Offer practical cooking tips, serving suggestions, or advice on ingredient selection and storage.
+
+Example:
+  Ingredients:
+    - 1 lb Brussels sprouts, trimmed and halved
+    - 2 tbsp olive oil
+    - 1 tsp garlic powder
+    - ½ tsp smoked paprika (optional)
+    - ½ tsp salt
+    - ¼ tsp black pepper
+
+  Instructions:
+    Phase 1: Prepping the Sprouts
+      - Wash the Brussels sprouts thoroughly and pat them dry.
+      - Trim the stems and halve the sprouts for even cooking.
+      New ingredients: 
+        1 lb Brussels sprouts, trimmed and halved
+    Phase 2: Seasoning
+      - In a large bowl, toss the halved sprouts with olive oil, garlic powder, paprika (if using), salt, and black pepper until evenly coated.
+      New ingredients: 
+      - 2 tbsp olive oil
+      - 1 tsp garlic powder
+      - ½ smoked paprika
+      - ½ salt
+      - ¼ black pepper
+    Phase 3: Air Frying
+      - Preheat your air fryer to 375°F (190°C) for 3 minutes.
+      - Place the sprouts in the air fryer basket in a single layer. Avoid overcrowding for maximum crispiness.
+      - Air fry for 12–15 minutes, shaking the basket halfway through, until the edges are crispy and golden brown.
+    
+  Twists:
+    - Add a Sweet Kick: Drizzle 1 tbsp honey or maple syrup over the sprouts during the last 2 minutes of cooking for a sweet-savory finish.
+    - Asian-Style: Toss the cooked sprouts in a mix of soy sauce (1 tbsp), sesame oil (1 tsp), and a sprinkle of sesame seeds.
+
+  Tips:
+    - Crispier Sprouts: Ensure the sprouts are completely dry before seasoning.
+    - Serving Suggestion: Pair with a squeeze of fresh lemon juice or a sprinkle of grated Parmesan for added zing.
+    - Storage: Leftovers can be reheated in the air fryer at 350°F for 3–4 minutes.
