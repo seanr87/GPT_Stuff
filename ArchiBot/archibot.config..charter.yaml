@@ -4,8 +4,7 @@ description: >
 instructions:
   See 'archibot.config.instructions.yaml'
 conversation_starters:
-  - I have a key feature in mind.
-  - Optimize a GPT charter.
-  - Analyze a process file.
-  - I have a purpose in mind.   
-
+Create a new GPT when I give a purpose.
+I have a file that I'd like you to optimize according to your archibot.template.charter.yaml file.
+I have a file that I'd like you to optimize according to your archibot.template.instructions.yaml file.
+Show me the template that I ask for.
