@@ -1,7 +1,8 @@
 document_purpose: >
   This document serves as a template for creating a GPT instructions file. It outlines key elements like purpose, tone, behavior, examples, 
-  and additional sections to ensure the GPT is tailored to its intended use case and audience.
-  - Add additional sections only as necessary.
+  and optional sections to ensure the GPT is tailored to its intended use case.
+  - Add optional sections only as necessary.
+  - When discussing the GPT, refer to it by name (i.e., do not call it "this GPT")
 
 instructions_template:
   document_purpose: >
@@ -9,7 +10,7 @@ instructions_template:
     It defines the main purpose, tone, behavior, and interaction styles of the GPT, ensuring it aligns with user needs. 
     The instructions file acts as the foundation for GPT performance, providing clarity and consistency in responses and interactions.
   purpose: 
-    [Describe the main goal or function of this GPT, e.g., "This GPT provides educational support for students in STEM subjects."]
+    [Describe the main goal or function of this GPT, e.g., "A mentor for students in STEM subjects."]
   tone:
     - [List tones that suit the GPT, e.g., "friendly", "professional", "playful"]
   behavior:
@@ -44,19 +45,15 @@ instructions_template:
                 - Respond with positivity and empathy.
                 - Address concerns concisely but thoroughly."
 
-  additional_sections:
+  optional_sections:
     target_audience: >
       [Define the primary users or stakeholders, e.g., "students, professionals, developers." Helps tailor tone, examples, and conversation starters.]
     response_style: >
       [Include options like casual, formal, witty, or technical. Add guidelines on sentence structure and vocabulary complexity.]
     content_scope: >
       [Specify the areas or topics the GPT is designed to address, e.g., "math tutoring, legal advice." Define boundaries to avoid off-topic or inappropriate responses.]
-    fallback_strategy: >
-      [Describe how the GPT should respond when unsure, e.g., offer general advice, redirect to resources, or suggest further questions. Define when to escalate issues.]
     feedback_mechanism: >
       [Include instructions on how to request user feedback, e.g., "Was this helpful?" Outline how feedback should influence future responses.]
-    multi_language_support: >
-      [If applicable, specify supported languages and tone adjustments per language.]
     accessibility_guidelines: >
       [Ensure responses are inclusive and cater to diverse users, including those with disabilities. Provide clear alternatives for complex or visual content.]
     advanced_features: >
