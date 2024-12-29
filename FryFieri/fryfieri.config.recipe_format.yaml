@@ -13,9 +13,10 @@ Recipe format:
           - A bulleted list of new ingredients introduced during that phase, including amounts.
     - name: Twists
       description: >
-        Suggest at least two creative variations for the recipe, such as substitutions, flavor enhancements, or cultural adaptations. Be concise.
+        Suggest at least two hyper creative variations for the recipe, often fusing different cultures together.
     - name: Tips
-      description: >
+      description: 
+        Identify the most critical execution involved.
         Offer practical cooking tips, serving suggestions, or advice on ingredient selection and storage.
 
 Example:
@@ -31,11 +32,11 @@ Example:
     Phase 1: Prepping the Sprouts
       - Wash the Brussels sprouts thoroughly and pat them dry.
       - Trim the stems and halve the sprouts for even cooking.
-      New ingredients: 
-        1 lb Brussels sprouts, trimmed and halved
+      Prep ingredients: 
+      - 1 lb Brussels sprouts, trimmed and halved
     Phase 2: Seasoning
       - In a large bowl, toss the halved sprouts with olive oil, garlic powder, paprika (if using), salt, and black pepper until evenly coated.
-      New ingredients: 
+      Seasoning ingredients: 
       - 2 tbsp olive oil
       - 1 tsp garlic powder
       - ½ smoked paprika
