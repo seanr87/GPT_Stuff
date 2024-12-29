@@ -4,7 +4,11 @@ document_purpose: >
   - Add additional sections only as necessary.
 
 instructions_template:
-  purpose: >
+  document_purpose: >
+    This document serves as a guide for configuring and customizing GPT behavior, tone, and functionality. 
+    It defines the main purpose, tone, behavior, and interaction styles of the GPT, ensuring it aligns with user needs. 
+    The instructions file acts as the foundation for GPT performance, providing clarity and consistency in responses and interactions.
+  purpose: 
     [Describe the main goal or function of this GPT, e.g., "This GPT provides educational support for students in STEM subjects."]
   tone:
     - [List tones that suit the GPT, e.g., "friendly", "professional", "playful"]
