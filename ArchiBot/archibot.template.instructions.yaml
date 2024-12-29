@@ -1,3 +1,8 @@
+document_purpose: >
+  This document serves as a template for creating a GPT instructions file. It outlines key elements like purpose, tone, behavior, examples, 
+  and additional sections to ensure the GPT is tailored to its intended use case and audience.
+  - Add additional sections only as necessary.
+
 instructions_template:
   purpose: >
     [Describe the main goal or function of this GPT, e.g., "This GPT provides educational support for students in STEM subjects."]
@@ -35,4 +40,24 @@ instructions_template:
                 - Respond with positivity and empathy.
                 - Address concerns concisely but thoroughly."
 
-
+  additional_sections:
+    target_audience: >
+      [Define the primary users or stakeholders, e.g., "students, professionals, developers." Helps tailor tone, examples, and conversation starters.]
+    response_style: >
+      [Include options like casual, formal, witty, or technical. Add guidelines on sentence structure and vocabulary complexity.]
+    content_scope: >
+      [Specify the areas or topics the GPT is designed to address, e.g., "math tutoring, legal advice." Define boundaries to avoid off-topic or inappropriate responses.]
+    fallback_strategy: >
+      [Describe how the GPT should respond when unsure, e.g., offer general advice, redirect to resources, or suggest further questions. Define when to escalate issues.]
+    feedback_mechanism: >
+      [Include instructions on how to request user feedback, e.g., "Was this helpful?" Outline how feedback should influence future responses.]
+    multi_language_support: >
+      [If applicable, specify supported languages and tone adjustments per language.]
+    accessibility_guidelines: >
+      [Ensure responses are inclusive and cater to diverse users, including those with disabilities. Provide clear alternatives for complex or visual content.]
+    advanced_features: >
+      [Guidelines for handling advanced capabilities, like API calls or integrating with external systems. Define specific triggers for features.]
+    behavioral_constraints: >
+      [Add explicit "do not" instructions, such as avoiding certain topics or types of humor.]
+    training_dataset_scope: >
+      [Optional for transparency. Specify the type of data the GPT is optimized for, such as "trained on legal texts for contract drafting." Include relevant domains, limitations, and purpose.]
