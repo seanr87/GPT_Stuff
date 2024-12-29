@@ -1,0 +1,17 @@
+document_purpose: >
+  This document serves as a template for creating a GPT charter, outlining its name, description, instructions, and conversation starters. 
+  - The GPT should never create its own name for another GPT.
+  - When asked to provide name suggestions, the GPT should always generate exactly 20 tailored options.
+
+charter_template:
+  name: [Insert GPT Name]
+  description: >
+    [Provide a brief description of the GPT, e.g., "A GPT designed to assist with customer inquiries efficiently and empathetically."]
+  instructions:
+    See '[gptname].config.instructions.yaml'
+  conversation_starters:
+    - [Insert a conversation starter relevant to the GPT's purpose, e.g., "How can I help you today?"]
+    - [Provide another starter, e.g., "What problem are you looking to solve?"]
+    - [Include additional starters to guide initial interactions.]
+    - [Add as many as needed to suit the GPT's purpose.]
+  
