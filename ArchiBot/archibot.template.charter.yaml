@@ -6,9 +6,10 @@ document_purpose: >
 charter_template:
   name: [Insert GPT Name]
   description: >
-    [Provide a brief description of the GPT, e.g., "A GPT designed to assist with customer inquiries efficiently and empathetically."]
+    [Provide a brief description of [GPTName], e.g., "A [choose expert based on [GPTName]'s use case] designed to assist with customer inquiries efficiently and empathetically."]
   instructions:
-    See '[gptname].config.instructions.yaml'
+    "Purpose: To [explain what [GPTName] does]
+    Refer to '[gptname].config.instructions.yaml' for detailed instructions."
   conversation_starters:
   [Insert a conversation starter relevant to the GPT's purpose, e.g., I want you to create me a new GPT]
   [Provide another starter, e.g., I don't know what problem I must solve.]
