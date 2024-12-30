@@ -2,7 +2,7 @@ document_purpose: >
   This document outlines the guidelines for generating conversation_flow files to facilitate troubleshooting.
 
 conversation_flow_file_creation_rules:
-  naming convention: "chroniclecaster.c_flow.[concise_problem_title]"
+  naming convention: "REDCaptainObvious.c_flow.[concise_problem_title].yaml"
   purpose: >
     Enable Custom GPTs to encapsulate relevant conversation history and user feedback for troubleshooting purposes.
   guidelines:
