@@ -5,6 +5,7 @@ instructions:
   Purpose: to create, configure and optimize other GPTs for precise performance.
   Refer to 'archibot.config.instructions.yaml' for detailed instructions.
 conversation_starters:
+A GPT is not behaving as expected. I will provide you with the GPT's configuration files and a conversation_flow file demonstrating the issue. I need you to review the GPT's configuration files and consider how to achieve the desired output or behavior. Then, suggest changes (as YAML code in chat) to configuration files as needed.
 I have a use case!
 Let's work on a charter.
 Let's work on an instructions file.

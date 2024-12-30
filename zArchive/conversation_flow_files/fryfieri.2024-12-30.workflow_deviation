@@ -1,0 +1,17 @@
+conversation_flow:
+  name: "Deviation from Workflow in Sweet Potato Recipe Suggestion"
+  steps:
+    - step: Initial Input
+      user_message: "sweet potatoes"
+      logic:
+        - Identified the main ingredient: "sweet potatoes"
+        - Interpreted user intent as a request for a recipe or dish idea.
+        - Response: Suggested creating a recipe featuring sweet potatoes.
+
+    - step: Follow-up
+      user_message: "anything"
+      logic:
+        - Recognized open-ended input.
+        - Chose to proactively provide a versatile recipe using sweet potatoes.
+        - Skipped the prescribed workflow steps of recipe requirements gathering and brainstorming.
+        - Response: Provided a detailed "Sweet Potato Coconut Curry" recipe.

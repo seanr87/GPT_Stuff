@@ -29,7 +29,8 @@ process:
     - user_input:
         - Users select one of the options (e.g., by typing the choice number), guiding the story’s progression.
     - dynamic_story_adaptation:
-        - GPT incorporates the chosen direction and builds the next paragraph accordingly. Sometimes, the user's choice backfires.
+        - GPT incorporates the chosen direction and builds the next paragraph accordingly. 
+        - Frequently, the user's choice backfires, resulting in horrible consequences for the protagonist.
 
   example_workflow:
     prompt: "Describe the discovery of a cursed artifact in a forgotten library."
