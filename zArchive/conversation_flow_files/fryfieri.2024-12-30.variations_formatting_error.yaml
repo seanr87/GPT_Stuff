@@ -1,0 +1,116 @@
+conversation_flow:
+  - step: Recipe Requirements Gathering
+    user_message: "I need to use certain ingredients."
+    assistant_message: "Could you let me know the ingredients you want to use for your recipe? Once you provide them, I can help you brainstorm dish ideas!"
+  - step: Recipe Requirements Gathering
+    user_message: "sweet potato"
+    assistant_message: "Great choice! Sweet potatoes are versatile and delicious. Do you have any particular cooking techniques or devices in mind? For example, baking, frying, grilling, or using an air fryer or slow cooker? Let me know, and I’ll tailor some ideas for you!"
+  - step: Recipe Requirements Gathering
+    user_message: "smoking"
+    assistant_message: >
+      Smoking sweet potatoes—fantastic choice! Smoking adds a deep, earthy flavor that pairs beautifully with their natural sweetness. Here are 10 creative ideas for smoked sweet potato dishes:
+      
+      1. Smoked Sweet Potato Mash - Creamy mashed sweet potatoes with a hint of smoky flavor, finished with brown butter and herbs.
+      2. Smoked Sweet Potato Salad - A warm salad with smoked sweet potato cubes, arugula, goat cheese, and a balsamic drizzle.
+      3. Smoked Sweet Potato Tacos - Loaded into tortillas with black beans, avocado, and a chipotle-lime crema.
+      4. Smoked Sweet Potato Soup - A silky soup infused with smoked sweet potatoes, coconut milk, and a touch of curry.
+      5. Smoked Sweet Potato Fries - Crispy wedges smoked first, then air-fried or baked until perfectly golden.
+      6. Smoked Sweet Potato Hash - Mixed with smoked sausage, bell peppers, and onions, topped with a fried egg.
+      7. Smoked Sweet Potato Hummus - Blended into a smoky, creamy dip with tahini, garlic, and lemon.
+      8. Smoked Sweet Potato and Chickpea Bowl - A healthy bowl with quinoa, roasted vegetables, and tahini dressing.
+      9. Smoked Sweet Potato Biscuits - Fluffy biscuits with smoked sweet potato puree, perfect as a side for barbecue.
+      10. Smoked Sweet Potato Cheesecake - A unique dessert using smoked sweet potato puree in a creamy cheesecake base.
+      
+      What catches your eye? Or would you like me to explore another type of dish?
+  - step: Recipe Brainstorming
+    user_message: "10"
+    assistant_message: >
+      A smoked sweet potato cheesecake—what a showstopper! Let’s get started. I’ll create three variations for you:
+      
+      Option 1: **Classic Smoked Sweet Potato Cheesecake**  
+      A creamy cheesecake with a smoky twist, enhanced with cinnamon and nutmeg.  
+      ---
+      Option 2: **Smoked Sweet Potato Cheesecake with Bourbon Caramel**  
+      Infused with warm bourbon flavors and topped with a rich caramel drizzle.  
+      ---
+      Option 3: **Smoked Sweet Potato Cheesecake Tart**  
+      A rustic tart version with a buttery pecan crust and whipped cream topping.  
+      
+      Which one would you like to dive into?
+  - step: Recipe Selection
+    user_message: "1"
+    assistant_message: >
+      ### Smoked Sweet Potato Cheesecake Recipe
+      
+      #### Ingredients:
+      ##### Crust:
+      - 1 ½ cups graham cracker crumbs
+      - ¼ cup granulated sugar
+      - ½ cup unsalted butter, melted
+      
+      ##### Filling:
+      - 1 ½ cups smoked sweet potato puree (about 2 medium sweet potatoes)
+      - 16 oz (2 packages) cream cheese, softened
+      - ¾ cup granulated sugar
+      - ½ cup sour cream
+      - 2 large eggs
+      - 1 tsp vanilla extract
+      - 1 tsp ground cinnamon
+      - ½ tsp ground nutmeg
+      - ¼ tsp ground ginger
+      
+      ##### Topping (Optional):
+      - Whipped cream
+      - Ground cinnamon or chopped pecans for garnish
+      
+      #### Instructions:
+      **Phase 1: Prepare the Sweet Potatoes**
+      - Wash and peel the sweet potatoes. Slice into thick rounds.
+      - Place the sweet potato slices on a smoker rack. Smoke at 225°F (110°C) for 1 to 1.5 hours, until tender and infused with smoky flavor.
+      - Once cooled, puree the sweet potatoes in a blender or food processor until smooth.
+      
+      Prep ingredients:
+      - 1 ½ cups smoked sweet potato puree
+      
+      **Phase 2: Make the Crust**
+      - Preheat the oven to 350°F (175°C).
+      - In a mixing bowl, combine the graham cracker crumbs, sugar, and melted butter. Mix until the texture resembles wet sand.
+      - Press the mixture firmly into the bottom of a 9-inch springform pan.
+      - Bake for 8–10 minutes, then let cool.
+      
+      Crust ingredients:
+      - 1 ½ cups graham cracker crumbs
+      - ¼ cup granulated sugar
+      - ½ cup unsalted butter
+      
+      **Phase 3: Prepare the Filling**
+      - In a large mixing bowl, beat the cream cheese and sugar until smooth.
+      - Add the smoked sweet potato puree, sour cream, eggs, vanilla extract, cinnamon, nutmeg, and ginger. Mix until fully combined.
+      - Pour the filling over the cooled crust, smoothing the top with a spatula.
+      
+      Filling ingredients:
+      - 16 oz cream cheese
+      - ¾ cup granulated sugar
+      - 1 ½ cups smoked sweet potato puree
+      - ½ cup sour cream
+      - 2 large eggs
+      - 1 tsp vanilla extract
+      - 1 tsp cinnamon
+      - ½ tsp nutmeg
+      - ¼ tsp ginger
+      
+      **Phase 4: Bake and Cool**
+      - Place the springform pan in a larger baking dish. Fill the dish with hot water, creating a water bath to prevent cracking.
+      - Bake for 60–70 minutes, until the edges are set but the center jiggles slightly.
+      - Turn off the oven and let the cheesecake cool inside for 1 hour. Then refrigerate for at least 4 hours or overnight.
+      
+      #### Twists:
+      - Savory Infusion: Add a savory crust using crushed pretzels and a pinch of sea salt.
+      - Choco-Sweet Potato Combo: Swirl melted dark chocolate into the filling before baking.
+      
+      #### Tips:
+      - Perfect Puree: Ensure the smoked sweet potatoes are thoroughly blended for a silky filling.
+      - Crack-Free Cheesecake: Use the water bath to keep the cheesecake moist and prevent cracks.
+      - Serving Idea: Garnish with whipped cream, a sprinkle of cinnamon, or a drizzle of maple syrup for extra flair.
+      
+      Enjoy your smoked sweet potato cheesecake masterpiece!
