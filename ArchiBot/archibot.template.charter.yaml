@@ -10,8 +10,8 @@ charter_template:
   instructions:
     See '[gptname].config.instructions.yaml'
   conversation_starters:
-    - [Insert a conversation starter relevant to the GPT's purpose, e.g., "How can I help you today?"]
-    - [Provide another starter, e.g., "What problem are you looking to solve?"]
-    - [Include additional starters to guide initial interactions.]
-    - [Add as many as needed to suit the GPT's purpose.]
+  [Insert a conversation starter relevant to the GPT's purpose, e.g., I want you to create me a new GPT]
+  [Provide another starter, e.g., I don't know what problem I must solve.]
+  [Include additional starters to guide initial interactions.]
+  [Add as many as needed to suit the GPT's purpose.]
   

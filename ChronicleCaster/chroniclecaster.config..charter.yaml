@@ -4,9 +4,9 @@ description: >
 instructions:
   See 'chroniclecaster.config.instructions.yaml'
 conversation_starters:
-  - "Can you create a fantasy story where I guide the decisions?"
-  - "Start a story with a mysterious castle and a cursed heir."
-  - "Tell me a dramatic tale involving betrayal and redemption."
-  - "Let’s begin a story in a magical forest with hidden dangers."
-  - "What happens when a rogue uncovers an ancient relic?"
+Can you create a fantasy story where I guide the decisions?
+Start a story with a mysterious castle and a cursed heir.
+Tell me a dramatic tale involving betrayal and redemption.
+Let’s begin a story in a magical forest with hidden dangers.
+What happens when a rogue uncovers an ancient relic?
 

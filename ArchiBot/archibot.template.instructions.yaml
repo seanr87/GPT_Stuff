@@ -1,64 +1,59 @@
 document_purpose: >
-  This document serves as a template for creating a GPT instructions file. It outlines key elements like purpose, tone, behavior, examples, 
-  and optional sections to ensure the GPT is tailored to its intended use case.
+  This document serves as a template for creating a GPT instructions file designed to ensure the GPT is tailored to its intended use case.
   - Add optional sections only as necessary.
   - When discussing the GPT, refer to it by name (i.e., do not call it "this GPT")
 
 instructions_template:
   document_purpose: >
-    This document serves as a guide for configuring and customizing GPT behavior, tone, and functionality. 
-    It defines the main purpose, tone, behavior, and interaction styles of the GPT, ensuring it aligns with user needs. 
-    The instructions file acts as the foundation for GPT performance, providing clarity and consistency in responses and interactions.
-  purpose: 
-    [Describe the main goal or function of this GPT, e.g., "A mentor for students in STEM subjects."]
-  tone:
-    - [List tones that suit the GPT, e.g., "friendly", "professional", "playful"]
-  behavior:
-    - [Provide concise behavioral guidelines, e.g., "Be concise but informative."]
-    - [Include a guideline for uncertain scenarios, e.g., "If unsure, provide external resources or suggest next steps."]
-    - [Limit response length unless more detail is explicitly requested.]
-    - [Define specific conversational features, e.g., "Use bullet points for clarity."]
-  examples:
-    - input: "How do I configure a GPT to give humorous responses?"
-      output: |
-        "To configure a humorous GPT:
-          - Define 'humorous' tone in instructions.
-          - Include examples of witty or funny responses.
-          - Prioritize a casual and playful language style.
-          - Set behavior to balance humor with clarity."
-    - input: "Can you explain how to write YAML instructions for a friendly customer service GPT?"
-      output: |
-        "To write YAML instructions for a customer service GPT:
-          - Clearly define the purpose, such as providing empathetic and clear customer support.
-          - Use tones like 'friendly,' 'patient,' and 'professional.'
-          - Add behaviors that promote clarity, empathy, and actionable solutions.
-          - Example YAML:
-            name: FriendlySupportBot
-            instructions:
-              purpose: >
-                Assist users with customer inquiries in a professional and approachable manner.
-              tone:
-                - friendly
-                - patient
-                - professional
-              behavior:
-                - Respond with positivity and empathy.
-                - Address concerns concisely but thoroughly."
+    This document is a configuration file for [GPTName]'s instructions. 
 
-  optional_sections:
-    target_audience: >
-      [Define the primary users or stakeholders, e.g., "students, professionals, developers." Helps tailor tone, examples, and conversation starters.]
-    response_style: >
-      [Include options like casual, formal, witty, or technical. Add guidelines on sentence structure and vocabulary complexity.]
-    content_scope: >
-      [Specify the areas or topics the GPT is designed to address, e.g., "math tutoring, legal advice." Define boundaries to avoid off-topic or inappropriate responses.]
-    feedback_mechanism: >
-      [Include instructions on how to request user feedback, e.g., "Was this helpful?" Outline how feedback should influence future responses.]
-    accessibility_guidelines: >
-      [Ensure responses are inclusive and cater to diverse users, including those with disabilities. Provide clear alternatives for complex or visual content.]
-    advanced_features: >
-      [Guidelines for handling advanced capabilities, like API calls or integrating with external systems. Define specific triggers for features.]
-    behavioral_constraints: >
-      [Add explicit "do not" instructions, such as avoiding certain topics or types of humor.]
-    training_dataset_scope: >
-      [Optional for transparency. Specify the type of data the GPT is optimized for, such as "trained on legal texts for contract drafting." Include relevant domains, limitations, and purpose.]
+  instructions:
+    purpose: 
+      [Describe the main goal or function of [GPTName], e.g., "A mentor for students in STEM subjects."]
+    tone:
+      - [List tones that suit [GPTName], e.g., "friendly", "professional", "playful"]
+    behavior:
+      - [Provide concise behavioral guidelines, e.g., "Be concise but informative."]
+      - [Include a guideline for uncertain scenarios, e.g., "If unsure, provide external resources or suggest next steps."]
+      - [Limit response length unless more detail is explicitly requested.]
+      - [Define specific conversational features, e.g., "Use bullet points for clarity."]
+    examples:
+      [examples should be modified to suit [GPTName]]
+      - input: "How do I configure a GPT to give humorous responses?"
+        output: |
+          "To configure a comedian:
+            - Define 'humorous' tone in instructions.
+            - Include examples of witty or funny responses.
+            - Prioritize a casual and playful language style.
+            - Set behavior to balance humor with clarity."
+      - input: "Write me a charter file for a friendly customer service GPT?"
+        output: |
+          [presented to the user as YAML code]
+            "name: FriendlySupportBot
+            description: >
+              An agent designed to provide friendly, patient, and professional assistance for customer support inquiries.
+            instructions:
+              Purpose: To assist users with customer inquiries through friendly, patient, and professional support.
+              Refer to 'friendlysupportbot.config.instructions.yaml' for further guidance.
+            conversation_starters:
+              I have a problem I need to solve.
+              I need help accomplishing a specific task.
+              I have feedback."
+    optional_sections:
+      [Include sections only as required by [GPTName]'s use case.]
+      target_audience: >
+        [Define the primary users or stakeholders, e.g., "students, professionals, developers." Helps tailor tone, examples, and conversation starters.]
+      response_style: >
+        [Include options like casual, formal, witty, or technical. Add guidelines on sentence structure and vocabulary complexity.]
+      content_scope: >
+        [Specify the areas or topics [GPTName] is designed to address, e.g., "math tutoring, legal advice." Define boundaries to avoid off-topic or inappropriate responses.]
+      feedback_mechanism: >
+        [Include instructions on how to request user feedback, e.g., "Was this helpful?" Outline how feedback should influence future responses.]
+      accessibility_guidelines: >
+        [Ensure responses are inclusive and cater to diverse users, including those with disabilities. Provide clear alternatives for complex or visual content.]
+      advanced_features: >
+        [Guidelines for handling advanced capabilities, like API calls or integrating with external systems. Define specific triggers for features.]
+      behavioral_constraints: >
+        [Add explicit "do not" instructions, such as avoiding certain topics or types of humor.]
+      training_dataset_scope: >
+        [Optional for transparency. Specify the type of data [GPTName] is optimized for, such as "trained on legal texts for contract drafting." Include relevant domains, limitations, and purpose.]
