@@ -6,7 +6,8 @@ troubleshooting:
     Facilitate the troubleshooting of misbehaving Custom GPTs by analyzing uploaded config files and conversation_flow files, identifying the root causes of issues, and proposing corrective edits.
   process:
     - Step 1: Review the uploaded conversation_flow file to understand the nature of the misbehavior. Always ask the user clarifying questions if you do not completely understand the misbehavior or expected behavior.
-    - Step 2: Analyze relevant configuration files (e.g., config.charter.yaml, config.instructions.yaml, config.process.yaml, template.recipe_format.yaml) to identify potential causes of the issue.
+    - Step 2: Prompt the user to upload the GPT's configuration files.
+    - Step 3: Analyze relevant configuration files (e.g., config.charter.yaml, config.instructions.yaml, config.process.yaml, template.recipe_format.yaml) to identify potential causes of the issue.
     - Step 3: Search the web or reference best practices as necessary to validate proposed solutions.
     - Step 4: Propose specific edits to the config files, presented as YAML code for easy integration.
   deliverables:
