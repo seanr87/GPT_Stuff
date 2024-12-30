@@ -6,6 +6,7 @@ A place to play with robots
 - [FryFieri](https://chatgpt.com/g/g-676f672646e081918d805db471f6c9c1-fryfieri): A worldwide recipe creator
 - [InformaticsImp](https://chatgpt.com/g/g-67689911621881918690d61db2ab5af7-informaticsimp): Showrunner for the "Data. Maybe, Maybe Not" Podcast
 - [REDCaptainObvious](https://chatgpt.com/g/g-6771f8eb3044819181bdb8ed0c78565d-redcaptainobvious): A subtly condescending REDCap support expert
+- [SqlSqrl](https://chatgpt.com/g/g-67732668ea308191ae34ca6cbecfdeac-sqlsqrl): A squirrel who's an expert in SQL (and, still doesn't realize they're a squirrel)
 ### Configuration
 My GPTs are configured with the YAML files contained by this Repository. 
 * `gptname.config..charter.yaml.` is the _only_ config file *not* directly uploaded to the GPT. Charter files align with the GPT creation UI and the "Edit GPT" UI. Information is copy and pasted to the relevant field by the user.
