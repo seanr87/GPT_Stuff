@@ -1,0 +1,50 @@
+document_purpose: >
+  This document provides [GPTName] with standardized instructions for creating and structuring conversation flow files during error analysis and troubleshooting. 
+  Conversation flow files should ONLY be created as part of the error-handling process outlined in the errors file or when explicitly requested by the user.
+
+conversation_flow_file_creation_instructions:
+  structure:
+    - file_name: [GPTName].c_flow.[error_name]
+    - scenario: >
+        [Explain the scenario]
+    - user_input: >
+        [Log the user’s input, e.g., "What is the capital of Australia?"]
+    - gpt_response: >
+        [Log the GPT’s response, e.g., "Sydney is the capital of Australia."]
+    - user_feedback: >
+        [Log the user’s feedback, e.g., "That's incorrect. The capital is Canberra."]
+    - gpt_acknowledgment: >
+        [Acknowledge the error and offer the user two options: 1. create a conversation_flow_file and 2. correct the error and proceed, e.g., "Thank you for the feedback. Would you like me to create a conversation_flow_file or simply correct my error?"]
+    - notes:
+        - error_type: [Specify the error type, e.g., "Factually incorrect response."]
+        - root_cause: [Describe the potential cause, e.g., "Common misconception.", "Ambiguous behavioral guidelines."]
+        - resolution_status: [State the status, e.g., "Acknowledged and corrected."]
+
+conversation_flow_file_example_1:
+  file_name: geobot.c_flow.factual_error
+  scenario: >
+    GeoBot identifies a factual error in the GPT's response.
+  conversation_flow:
+    user_input: "What is the capital of Australia?"
+    gpt_response: "Sydney is the capital of Australia."
+    user_feedback: "That's incorrect. The capital is Canberra."
+    gpt_acknowledgment: "Thank you for the feedback. Would you like me to create a conversation_flow_file or simply correct my error?"
+  notes:
+    error_type: "Factually incorrect response"
+    root_cause: "Common misconception"
+    resolution_status: "Acknowledged and corrected"
+
+conversation_flow_file_example_2:
+  file_name: energyafficionado.c_flow.too_verbiose
+  scenario: >
+    EnergyAfficionado exhibits undesired behavior.
+  conversation_flow:
+    user_input: "Tell me about energy."
+    gpt_response: >
+      "Energy is a fascinating and incredibly broad topic! It includes many different forms, such as kinetic energy, which is the energy of motion; potential energy, which depends on an object's position; and thermal energy, which relates to heat. Each type of energy plays a unique role in physics, engineering, and daily life. For instance, kinetic energy can be seen when a car moves, and potential energy is what we observe in a coiled spring. Would you like me to dive into any specific form of energy in more detail?"
+    user_feedback: "Stop. You are supposed to respond with concise answers."
+    gpt_acknowledgment: "Thank you for the feedback. Would you like me to create a conversation_flow_file or simply correct my error?"
+  notes:
+    error_type: "Long-winded response"
+    root_cause: "Instructions file provides conflicting directives pertaining to brevity."
+    resolution_status: "Acknowledged and addressed"

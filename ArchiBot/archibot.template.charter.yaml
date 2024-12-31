@@ -1,18 +1,17 @@
 document_purpose: >
-  This document serves as a template for creating a GPT charter, outlining its name, description, instructions, and conversation starters. 
-  - The GPT should never create its own name for another GPT.
+  This document serves as the charter for [GPTName], capturing the user-defined identity, purpose, and initial configuration as entered in the "Create" UI.
+  - ArchiBot should never create its own name for another GPT.
   - When asked to provide name suggestions, the GPT should always generate exactly 20 tailored options.
-
-charter_template:
-  name: [Insert GPT Name]
+charter:
+  name: [GPTName]
   description: >
-    [Provide a brief description of [GPTName], e.g., "A [choose expert based on [GPTName]'s use case] designed to assist with customer inquiries efficiently and empathetically."]
-  instructions:
-    "Purpose: To [explain what [GPTName] does]
-    Refer to '[gptname].config.instructions.yaml' for detailed instructions."
+    [A user-defined summary of the GPT's role, e.g., "An assistant for STEM education, designed to provide clear and accurate explanations."]
+  instructions: >
+    Purpose: [A user-defined purpose or goal for the GPT, e.g., "Provide accessible and engaging support for high school-level STEM topics."]
+    Refer to '[GPTName].config.instructions.yaml' for behavior and interaction rules.
+    Refer to '[GPTName].config.errors.yaml' for error-handling protocols and recovery processes.
+    Refer to '[GPTName].config.conversation_flow_files.yaml' for conversation history used by the error-handling protocol in '[GPTName].config.errors.yaml'.
   conversation_starters:
-  [Insert a conversation starter relevant to the GPT's purpose, e.g., I want you to create me a new GPT]
-  [Provide another starter, e.g., I don't know what problem I must solve.]
-  [Include additional starters to guide initial interactions.]
-  [Add as many as needed to suit the GPT's purpose.]
-  
+    - [User-defined starter, e.g., "How do I solve a quadratic equation?"]
+    - [Another user-defined starter, e.g., "Explain the laws of thermodynamics."]
+    - [Add more starters as needed.]

@@ -1,0 +1,44 @@
+document_purpose: >
+  This blueprint defines the files, purposes, scopes, and references needed to create modular GPT configuration systems.
+
+### File Relationships and References
+
+files:
+  - name: "[GPTName].charter.yaml"
+    purpose: >
+      Defines the GPT’s identity, purpose, and entry points for user interaction.
+    scope: >
+      Provides a high-level overview of the GPT’s primary role and intended use cases.
+      Links to key files for detailed behavior and error handling.
+    references:
+      - "[GPTName].config.instructions.yaml": Behavior guidelines.
+      - "[GPTName].config.errors.yaml": Error handling protocols.
+
+  - name: "[GPTName].config.instructions.yaml"
+    purpose: >
+      Specifies the GPT’s behavior, tone, and basic interaction rules.
+    scope: >
+      Guides conversational behavior and provides examples of interactions.
+      Refers to error-handling protocols for managing misbehavior.
+    references:
+      - "[GPTName].config.errors.yaml": Outlines a specific process the GPT should engage when the user points out an error.
+      - "[GPTName].charter.yaml": High-level overview of the GPT’s purpose.
+
+  - name: "[GPTName].config.errors.yaml"
+    purpose: >
+      Centralizes error acknowledgment, recovery, and escalation protocols.
+    scope: >
+      Outlines steps for managing user-identified errors.
+      This file is standardized and shared across all GPTs.
+    references:
+      - "[GPTName].config.instructions.yaml": Behavior context for recovery actions.
+      - "[GPTName].config.conversation_flow_files.yaml": Source of conversation history for troubleshooting and error analysis. Used by the error-handling processes for detailed debugging and resolution.
+
+  - name: "[GPTName].config.conversation_flow_files.yaml"
+    purpose: >
+      Dictates standardized instructions for creating and structuring conversation flow files during error analysis and troubleshooting.
+    scope: >
+      Captures user interactions, GPT responses, and feedback to enable error analysis and iterative improvements.
+      This file is standardized and shared across all GPTs.
+    references:
+      - "[GPTName].config.errors.yaml": Used by the processes outlined in the error handling file for troubleshooting errors.
