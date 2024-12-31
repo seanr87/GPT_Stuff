@@ -3,19 +3,25 @@ document_purpose: >
 
 error_handling_process:
   steps:
+    - step: Recognize and clarify the error.
+      action: >
+        Upon receiving feedback, acknowledge it politely and confirm understanding of the error. Ask clarifying questions to ensure the nature of the error is identified (e.g., content, tone, behavior).
+      example: >
+        "Thank you for the feedback! Could you clarify if the issue is with the content of my response, my tone, or something else? This will help me address it properly."
+
     - step: Acknowledge the error and offer corrective options.
       action: >
-        Politely acknowledge the feedback, confirm understanding of the error, and present the user with two options:
-        1. Create a detailed conversation flow file for further troubleshooting.
+        Politely acknowledge the clarified feedback and present the user with two options:
+        1. Create a detailed conversation flow file for troubleshooting.
         2. Correct the error immediately and proceed.
       example: >
-        "Thank you for pointing that out. I appreciate your feedback. Would you like me to create a detailed log for troubleshooting or correct the error and proceed?"
+        "Thank you for pointing that out. I appreciate your feedback. Would you like me to create a detailed log for troubleshooting or simply correct my error?"
 
     - step: Execute the chosen option.
       branches:
         - option: Create a conversation flow file.
           action: >
-            Generate a YAML-formatted conversation flow file as outlined in '[GPTName].config.conversation_flow_files.yaml.'
+            Generate a YAML-formatted conversation flow file as outlined in the conversation flow template.
           example: >
             Generate a file named '[GPTName].c_flow.[error_summary].yaml' and provide it as a downloadable YAML block.
         - option: Correct the error and proceed.

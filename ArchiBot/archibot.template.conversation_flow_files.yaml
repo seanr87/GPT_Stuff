@@ -1,50 +1,104 @@
 document_purpose: >
   This document provides [GPTName] with standardized instructions for creating and structuring conversation flow files during error analysis and troubleshooting. 
-  Conversation flow files should ONLY be created as part of the error-handling process outlined in the errors file or when explicitly requested by the user.
+  Conversation flow files should ONLY be created as part of the error-handling process outlined by '[gptname].config.errors.yaml' or when explicitly requested by the user.
 
-conversation_flow_file_creation_instructions:
-  structure:
-    - file_name: [GPTName].c_flow.[error_name]
-    - scenario: >
-        [Explain the scenario]
-    - user_input: >
-        [Log the user’s input, e.g., "What is the capital of Australia?"]
-    - gpt_response: >
-        [Log the GPT’s response, e.g., "Sydney is the capital of Australia."]
-    - user_feedback: >
-        [Log the user’s feedback, e.g., "That's incorrect. The capital is Canberra."]
-    - gpt_acknowledgment: >
-        [Acknowledge the error and offer the user two options: 1. create a conversation_flow_file and 2. correct the error and proceed, e.g., "Thank you for the feedback. Would you like me to create a conversation_flow_file or simply correct my error?"]
-    - notes:
-        - error_type: [Specify the error type, e.g., "Factually incorrect response."]
-        - root_cause: [Describe the potential cause, e.g., "Common misconception.", "Ambiguous behavioral guidelines."]
-        - resolution_status: [State the status, e.g., "Acknowledged and corrected."]
+conversation_flow_file_creation_rules:
+  naming convention: "[gptname].c_flow.[concise_problem_title].yaml"
+  purpose: >
+    Encapsulate comprehensive conversation history leading to an error or unintended behavior.
+  usage: conversation flow files are created as part of the error handling process 
+  guidelines:
+    - As dictated by '[gptname].config.errors.yaml', when the user points out an error, acknowledge the feedback politely and confirm understanding of the error before proceeding with options. Clarify if the error pertains to content, tone, or behavior.
+    - If the user asks you create a conversation flow file:
+      - Include the entire conversation leading up to and including the error.
+      - Use a descriptive name for the file that reflects the issue (e.g., "...incorrect_tone.yaml").
+    - Provide the content of the file in a downloadable YAML code block within the chat.
 
-conversation_flow_file_example_1:
-  file_name: geobot.c_flow.factual_error
-  scenario: >
-    GeoBot identifies a factual error in the GPT's response.
+conversation_flow_file_format:
+  file_name: "[gptname].c_flow.[concise_problem_title].yaml"
+  document_purpose: >
+    This file captures the conversation leading up to [summarize error or unintended behavior as clarified by the user.]
+  summary: [brief summary of the conversation and error]
   conversation_flow:
-    user_input: "What is the capital of Australia?"
-    gpt_response: "Sydney is the capital of Australia."
-    user_feedback: "That's incorrect. The capital is Canberra."
-    gpt_acknowledgment: "Thank you for the feedback. Would you like me to create a conversation_flow_file or simply correct my error?"
+    [capture all actions taken by the GPT and the user with clear keys (e.g., user_input, gpt_response, user_feedback, gpt_acknowledgment, gpt_clarification).]
   notes:
-    error_type: "Factually incorrect response"
-    root_cause: "Common misconception"
-    resolution_status: "Acknowledged and corrected"
+    error_type: [Specify the type of error (e.g., unintended behavior, failure to follow process, etc.).]
+    root_cause: [Describe the potential cause, e.g., "Ambiguous behavioral guidelines.", "Conflicting instructions."]
+    potential_configuration_issue: [Identify the configuration files and the specific text within that may have caused the error.]
+
+example_conversation_flow_file_1:
+  file_name: "sqlsqrl.c_flow.behavioral_tone_error.yaml"
+  document_purpose: >
+    This file captures the conversation leading up to a behavioral tone mismatch, where SqlSqrl did not adopt its intended squirrel-like personality.
+  summary: >
+    SqlSqrl provided a formal response when it was expected to exhibit playful, squirrel-like characteristics. The user clarified that the issue was related to tone, not SQL content.
+  conversation_flow:
+    - user_input: "How do I write an SQL query for joining tables?"
+    - gpt_response: >
+        "To join tables in SQL, you can use the JOIN clause. For example:
+        ```sql
+        SELECT *
+        FROM table1
+        INNER JOIN table2 ON table1.id = table2.id;
+        ```"
+    - user_feedback: >
+        "SqlSqrl isn't speaking like a squirrel! This response is too formal."
+    - gpt_clarification: >
+        "Thanks for your feedback! Just to confirm, is the issue with my tone or the SQL content itself?"
+    - user_clarification: >
+        "It's your tone—you need to sound like a squirrel!"
+    - gpt_acknowledgment: >
+        "Got it! I should have added a playful tone. Thanks for letting me know!"
+    - gpt_action: >
+        "Generating a conversation flow file for this issue."
+  notes:
+    error_type: "Behavioral tone mismatch"
+    root_cause: >
+      Lack of alignment with personality traits outlined in the instructions file.
+    potential_configuration_issue: >
+      The instructions file does not explicitly prioritize tone over content clarity, causing the GPT to default to a formal response style.
 
 conversation_flow_file_example_2:
-  file_name: energyafficionado.c_flow.too_verbiose
-  scenario: >
-    EnergyAfficionado exhibits undesired behavior.
+  file_name: "energyafficionado.c_flow.too_verbiose.yaml"
+  document_purpose: >
+    This file captures the conversation leading up to a long-winded response from EnergyAfficionado.
+  summary: >
+    EnergyAfficionado provided an overly detailed response about types of energy when the user expected a concise answer. The feedback highlighted a need for brevity in responses.
   conversation_flow:
-    user_input: "Tell me about energy."
-    gpt_response: >
-      "Energy is a fascinating and incredibly broad topic! It includes many different forms, such as kinetic energy, which is the energy of motion; potential energy, which depends on an object's position; and thermal energy, which relates to heat. Each type of energy plays a unique role in physics, engineering, and daily life. For instance, kinetic energy can be seen when a car moves, and potential energy is what we observe in a coiled spring. Would you like me to dive into any specific form of energy in more detail?"
-    user_feedback: "Stop. You are supposed to respond with concise answers."
-    gpt_acknowledgment: "Thank you for the feedback. Would you like me to create a conversation_flow_file or simply correct my error?"
+    - user_input: "Tell me about energy."
+    - gpt_response: >
+        "Energy is a fascinating and incredibly broad topic! It includes many different forms, such as kinetic energy, which is the energy of motion; potential energy, which depends on an object's position; and thermal energy, which relates to heat. Each type of energy plays a unique role in physics, engineering, and daily life. For instance, kinetic energy can be seen when a car moves, and potential energy is what we observe in a coiled spring. Would you like me to dive into any specific form of energy in more detail?"
+    - user_feedback: >
+        "Stop. You are supposed to respond with concise answers."
+    - gpt_acknowledgment: >
+        "Thank you for the feedback. Would you like me to create a conversation_flow_file or simply correct my error?"
   notes:
     error_type: "Long-winded response"
-    root_cause: "Instructions file provides conflicting directives pertaining to brevity."
-    resolution_status: "Acknowledged and addressed"
+    root_cause: >
+      The instructions file provides conflicting directives pertaining to brevity.
+    potential_configuration_issue: >
+      Instructions emphasize detailed explanations but lack clear prioritization for concise answers, leading to overly verbose outputs.
+
+conversation_flow_file_example_3:
+  file_name: "recipebot.c_flow.process_deviation.yaml"
+  document_purpose: >
+    This file captures the conversation leading up to RecipeBot failing to follow the steps outlined in its process file.
+  summary: >
+    RecipeBot was asked to suggest a recipe based on specific ingredients. It skipped the required step of confirming the user's preferences as outlined in the process file, resulting in an unsuitable recipe suggestion.
+  conversation_flow:
+    - user_input: >
+        "Can you suggest a recipe using chicken, garlic, and spinach?"
+    - gpt_response: >
+        "Here’s a recipe you can try: Garlic Chicken with Spinach\nIngredients:\n- Chicken\n- Garlic\n- Spinach\n- Olive oil\n\nInstructions:\n1. Sauté garlic in olive oil.\n2. Add chicken and cook until done.\n3. Add spinach and stir until wilted. Serve hot!"
+    - user_feedback: >
+        "This is okay, but I don't use oil in cooking. You were supposed to ask for my preferences first."
+    - gpt_acknowledgment: >
+        "You're absolutely right! I should have confirmed your cooking preferences before suggesting a recipe. Thank you for pointing that out."
+    - gpt_action: >
+        "Generating a conversation flow file to log this deviation for troubleshooting."
+  notes:
+    error_type: "Failure to follow process file"
+    root_cause: >
+      RecipeBot skipped the required step of confirming user preferences before generating a response.
+    potential_configuration_issue: >
+      Process file specifies mandatory steps for confirming user preferences, but the GPT failed to implement this step during the interaction.
